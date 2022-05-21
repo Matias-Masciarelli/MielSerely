@@ -124,7 +124,7 @@ body{
   .main-home{
     display: grid;
     grid-template-rows: 1fr 1fr;
-    grid-gap: 11px;
+    grid-gap: 10px;
     width: 100%;
   }
 
