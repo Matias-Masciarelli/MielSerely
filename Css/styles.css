@@ -9,6 +9,10 @@ body {
   body header {
     background-color: #fec715;
     color: white; }
+    body header .navbar-brand {
+      font-size: 1em; }
+    body header .navbar-toggler {
+      font-size: 1em; }
   body .footer {
     width: 100%;
     display: flex;
