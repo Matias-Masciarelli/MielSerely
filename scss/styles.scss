@@ -1,14 +1,16 @@
+@import 'colores';
+
 /* GENERAL */
 body{
   margin: 0px;
-  font-family: 'Roboto', sans-serif;
-  background-color: rgb(108, 165, 202);
-  color:white;
+  font-family: $fuente-general;
+  background-color: $color-fondo;
+  color:$color-general;
   position: relative;
-  font-size: 3em;
+  font-size: 30px;
 
     header{
-      background-color: rgb(254, 199, 21);
+      background-color: $color-nav-botones;
       color: white;
         .navbar-brand{
         }
@@ -25,7 +27,7 @@ body{
       flex-wrap: wrap;
       justify-content: center;
       align-items: center;
-      background-color:rgb(44, 44, 44);
+      background-color:$color-footer;
       bottom: 0px;
       height: 20%;
 
@@ -46,21 +48,16 @@ body{
             border-radius: 30px;
             padding: 10px;
             margin: 10px 0px 20px 0px;
-            background-color: rgb(254, 199, 21);
+            background-color: $color-nav-botones;
             color: white;
-            font-family: 'Roboto', sans-serif;
+            font-family: $fuente-general;
               .btn-footer:hover{
                 transform: scale(1.1);
             }
           }
         }
     }
-    h1{
-      font-size: 2em;
-    }
-    h2{
-      font-size: 1.5em;
-    }
+
 }
 /* HOME */
 
@@ -85,10 +82,10 @@ body{
                 padding: 20px;
                 width: 80%;
                 margin: 150px 0px 0px 0px;
-                background-color: rgb(254, 199, 21);
+                background-color: $color-nav-botones;
                 border-radius: 30px;
                 font-size: 1em;
-                font-family: 'Roboto', sans-serif;
+                font-family: $fuente-general;
               }
 
               .btn-home:hover{
@@ -154,9 +151,9 @@ body{
   padding: 10px;
   width: 70%;
   border-radius: 20px;
-  background-color: rgb(254, 199, 21);
+  background-color: $color-nav-botones;
   color: white;
-  font-family: 'Roboto', sans-serif;
+  font-family: $fuente-general;
 }
 
 /* SOBRE NOSOTROS */
@@ -234,9 +231,9 @@ body{
   width: 20%;
   border-radius: 20px;
   font-size: 1em;
-  background-color: rgb(254, 199, 21);
+  background-color: $color-nav-botones;
   color: white;
-  font-family: 'Roboto', sans-serif;
+  font-family: $fuente-general;
 }
 
 .form-contacto{
@@ -512,4 +509,38 @@ body{
 .precios img:hover{
 transform: scale(1.2);
 }
+}
+
+
+
+
+
+/* MAPA */
+$sizes: (h1: 3rem, h2: 2rem);
+
+/* EACH */
+    @each $titulo, $size in $sizes{
+        #{$titulo}{
+            font-size: #{$size};
+            color: $color-general;
+            font-family: $fuente-general;
+        }
+    }
+
+/* MIXIN */
+@mixin titulo {
+    font-family: Roboto;
+    font-size: 3rem;
+}
+.main{
+    @include titulo
+}
+
+/* EXTEND */
+.estructura{
+    font-family: Roboto;
+}
+
+.main h1{
+    @extend .estructura
 }

@@ -1,11 +1,11 @@
 /* GENERAL */
 body {
   margin: 0px;
-  font-family: 'Roboto', sans-serif;
+  font-family: Roboto;
   background-color: #6ca5ca;
   color: white;
   position: relative;
-  font-size: 3em; }
+  font-size: 30px; }
   body header {
     background-color: #fec715;
     color: white; }
@@ -39,13 +39,9 @@ body {
         margin: 10px 0px 20px 0px;
         background-color: #fec715;
         color: white;
-        font-family: 'Roboto', sans-serif; }
+        font-family: Roboto; }
         body .footer .contacto-footer .btn-footer .btn-footer:hover {
           transform: scale(1.1); }
-  body h1 {
-    font-size: 2em; }
-  body h2 {
-    font-size: 1.5em; }
 
 /* HOME */
 .main-home {
@@ -69,7 +65,7 @@ body {
         background-color: #fec715;
         border-radius: 30px;
         font-size: 1em;
-        font-family: 'Roboto', sans-serif; }
+        font-family: Roboto; }
       .main-home .padre-home .texto-home .btn-home:hover {
         transform: scale(1.1); }
   .main-home .cloud-div {
@@ -125,7 +121,7 @@ body {
   border-radius: 20px;
   background-color: #fec715;
   color: white;
-  font-family: 'Roboto', sans-serif; }
+  font-family: Roboto; }
 
 /* SOBRE NOSOTROS */
 .texto-SN {
@@ -197,7 +193,7 @@ body {
   font-size: 1em;
   background-color: #fec715;
   color: white;
-  font-family: 'Roboto', sans-serif; }
+  font-family: Roboto; }
 
 .form-contacto {
   text-align: center;
@@ -378,3 +374,24 @@ body {
     margin: 0px 30px 30px 30px; }
   .precios img:hover {
     transform: scale(1.2); } }
+
+/* MAPA */
+/* EACH */
+h1 {
+  font-size: 3rem;
+  color: white;
+  font-family: Roboto; }
+
+h2 {
+  font-size: 2rem;
+  color: white;
+  font-family: Roboto; }
+
+/* MIXIN */
+.main {
+  font-family: Roboto;
+  font-size: 3rem; }
+
+/* EXTEND */
+.estructura, .main h1 {
+  font-family: Roboto; }
