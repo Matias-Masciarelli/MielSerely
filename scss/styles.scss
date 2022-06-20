@@ -233,7 +233,7 @@ body{
   }
   .img-contacto{
     width: 100%;
-    display: flex;
+    display: none;
   }
 }
 
@@ -268,13 +268,13 @@ body{
   }
 }
 
-@media screen and (min-width: 1000px){
+@media (min-width: 1701px) and (max-width: 6000px){
 
 /* GENERAL */
 .body-home{
   font-size: 20px;
     .header{
-      font-size: 15px;
+      font-size: 30px;
       li{
        float: left;
          a{
@@ -453,6 +453,7 @@ body{
   }
   .img-contacto{
     width: 50% !important;
+    display: block;
   }
 }
 
@@ -484,17 +485,278 @@ body{
 }
 }
 
-/* MAPA */
-$sizes: (h1: 3rem, h2: 2rem);
 
-/* EACH */
-    @each $titulo, $size in $sizes{
-        #{$titulo}{
-            font-size: #{$size};
-            color: $color-general;
-            font-family: $fuente-general;
+@media (min-width: 1000px) and (max-width: 1700px){
+
+  /* GENERAL */
+  body{
+    margin: 0px;
+    font-family: $fuente-general;
+    background-color: $color-fondo;
+    color:$color-general;
+    position: relative;
+    font-size: 30px;
+
+      header{
+        background-color: $color-nav-botones;
+        color: white;
+          .navbar-brand{
+            font-size: 1.5em;
+          }
+          .navbar-toggler{
+            font-size: 1em;
+          }
+      }
+      .footer{
+        width: 100%;
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: center;
+        align-items: center;
+        background-color:$color-footer;
+        bottom: 0px;
+        height: 20%;
+
+          img{
+            width: 100px;
+            height: 100px;
+          }
+          .contacto-footer{
+            text-align: center;
+            .form-footer{
+              width: 80%;
+              border-radius: 30px;
+              padding: 10px;
+              margin: 10px 0px 20px 0px;
+            }
+            .btn-footer{
+              width: 30%;
+              border-radius: 30px;
+              padding: 10px;
+              margin: 10px 0px 20px 0px;
+              background-color: $color-nav-botones;
+              color: white;
+              font-family: $fuente-general;
+                .btn-footer:hover{
+                  transform: scale(1.1);
+              }
+            }
+          }
+      }
+  }
+  .btn-SA{
+    font-size: 1em;
+    padding: 10px;
+    width: 70%;
+    border-radius: 20px;
+    background-color: $color-nav-botones;
+    color: white;
+    font-family: $fuente-general;
+  }
+  /* HOME */
+
+    .main-home{
+      display: grid;
+      grid-template-rows: 1fr 1fr;
+      grid-gap: 10px;
+      width: 100%;
+
+        .padre-home{
+          display: flex;
+          flex-direction: column;
+          align-items: center;
+
+            .texto-home{
+              margin: 150px 0px 0px 0px;
+              text-align: center;
+              width: 80%;
+
+                .btn-home{
+                  color:white;
+                  padding: 20px;
+                  width: 80%;
+                  margin: 150px 0px 0px 0px;
+                  background-color: $color-nav-botones;
+                  border-radius: 30px;
+                  font-size: 1em;
+                  font-family: $fuente-general;
+                }
+
+                .btn-home:hover{
+                  transform: scale(1.1);
+                }
+            }
         }
+        .cloud-div{
+          display: flex;
+          justify-content: flex-end;
+            .cloud-home{
+              margin: 100px 0px 0px 0px;
+              height: 50%;
+              width: 60%;
+            }
+        }
+
     }
+
+    /* SERVICIOS ADICIONALES */
+
+    .main-SA{
+      display: flex;
+      flex-direction: column;
+      .titulo-SA{
+        margin: 100px 0px 0px 0px;
+        h1{
+           text-align: center;
+         }
+         img{
+             width: 50%;
+         }
+         .nube-derecha{
+         display: flex;
+         justify-content: flex-end;
+         }
+      }
+      .texto-SA{
+        display: flex;
+        flex-wrap: wrap;
+        text-align: center;
+        padding: 20px;
+        img{
+          margin: 20px;
+          width: 90%;
+        }
+      }
+      .texto2-SA{
+        display: flex;
+        flex-wrap: wrap;
+        text-align: center;
+        padding: 20px;
+        img{
+          margin: 20px;
+          width: 90%;
+        }
+      }
+    }
+
+
+  /* SOBRE NOSOTROS */
+
+  .main-SN{
+    display: flex;
+    flex-direction: column;
+    .texto-SN{
+      display: flex;
+      flex-wrap: wrap;
+      justify-content: center;
+      text-align: center;
+      padding: 20px;
+      margin: 100px 0px 0px 0px;
+      img{
+        margin: 40px 0px 0px 0px;
+        width: 90%;
+      }
+    }
+    .texto2-SN{
+      display: flex;
+      flex-wrap: wrap;
+      text-align: center;
+      padding: 20px;
+      justify-content: center;
+      img{
+        margin: 40px 0px 0px 0px;
+        width: 90%;
+      }
+    }
+    .img2-SN img{
+      display: flex;
+      width: 100%;
+    }
+  }
+
+  /* CONTACTO */
+
+  .main-contacto{
+    .Padre-contacto{
+      margin: 150px 0px 100px 0px;
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      align-items: center;
+      .logo-contacto{
+        width: 80%;
+      }
+      .form-contacto{
+        text-align: center;
+        margin: 10px;
+      }
+      .form-contacto-d{
+        text-align: center;
+        margin: 10px;
+        input{
+          height: 200px;
+        }
+      }
+      div{
+        display: flex;
+        justify-content: center;
+        flex-direction: column;
+        input{
+          width: 100%;
+          padding: 10px;
+          border-radius: 20px;
+        }
+      }
+      .sumbit-contacto{
+        text-align: center;
+        margin: 30px;
+        padding: 10px;
+        width: 20%;
+        border-radius: 20px;
+        font-size: 1em;
+        background-color: $color-nav-botones;
+        color: white;
+        font-family: $fuente-general;
+      }
+    }
+    .img-contacto{
+      width: 100%;
+      display: none;
+    }
+  }
+
+
+  /* PRODUCTOS */
+
+  .main-productos{
+    background-image: url(../recursos/Productos.png);
+    background-repeat: no-repeat;
+    background-size: 250%;
+    background-position: bottom;
+    .padre-productos{
+      display: flex;
+      flex-direction:column;
+      justify-content: center;
+      text-align: center;
+      h1{
+        margin: 300px 0px 0px 0px;
+      }
+      img{
+        width: 30%;
+      }
+      .nubes-productos{
+        display: flex;
+        justify-content: space-between;
+      }
+      .precios{
+        display: flex;
+        justify-content: space-between;
+        margin: 1200px 30px 30px 30px;
+      }
+    }
+  }
+}
+
 
 /* MIXIN */
 @mixin titulo {
