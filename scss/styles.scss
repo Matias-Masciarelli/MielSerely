@@ -274,13 +274,14 @@ body{
 .body-home{
   font-size: 20px;
     .header{
-      font-size: 30px;
+      font-size: 20px;
       li{
-       float: left;
-         a{
-           padding: 20px 30px;
-      }
+        a{
+          margin-left: 20px;
         }
+      }
+    }
+
  .menu{
    clear: none;
    float: right;
@@ -483,7 +484,6 @@ body{
     }
   }
 }
-}
 
 
 @media (min-width: 1000px) and (max-width: 1700px){
@@ -501,10 +501,15 @@ body{
         background-color: $color-nav-botones;
         color: white;
           .navbar-brand{
-            font-size: 1.5em;
+            font-size: 0.8em;
           }
           .navbar-toggler{
             font-size: 1em;
+          }
+          li{
+            a{
+              margin-left:30px;
+            }
           }
       }
       .footer{
