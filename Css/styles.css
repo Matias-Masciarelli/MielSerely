@@ -205,7 +205,7 @@ body {
       justify-content: space-between;
       margin: 1200px 30px 30px 30px; }
 
-@media (min-width: 1800px) and (max-width: 6000px) {
+@media (min-width: 1600px) and (max-width: 6000px) {
   /* GENERAL */
   .body-home {
     font-size: 20px; }
@@ -356,7 +356,7 @@ body {
       .main-productos .padre-productos .precios img:hover {
         transform: scale(1.2); } }
 
-@media (min-width: 1000px) and (max-width: 1801px) {
+@media (min-width: 1000px) and (max-width: 1601px) {
   /* GENERAL */
   body {
     margin: 0px;
@@ -364,14 +364,14 @@ body {
     background-color: #6ca5ca;
     color: white;
     position: relative;
-    font-size: 30px; }
+    font-size: 2rem; }
     body header {
       background-color: #fec715;
       color: white; }
       body header .navbar-brand {
-        font-size: 0.8em; }
-      body header .navbar-toggler {
-        font-size: 1em; }
+        font-size: 2rem; }
+      body header li .nav-link {
+        font-size: 1.5rem; }
       body header li a {
         margin-left: 30px; }
     body .footer {

@@ -268,7 +268,7 @@ body{
   }
 }
 
-@media (min-width: 1800px) and (max-width: 6000px){
+@media (min-width: 1600px) and (max-width: 6000px){
 
 /* GENERAL */
 .body-home{
@@ -486,7 +486,7 @@ body{
 }
 }
 
-@media (min-width: 1000px) and (max-width: 1801px){
+@media (min-width: 1000px) and (max-width: 1601px){
 
   /* GENERAL */
   body{
@@ -495,18 +495,18 @@ body{
     background-color: $color-fondo;
     color:$color-general;
     position: relative;
-    font-size: 30px;
+    font-size: 2rem;
 
       header{
         background-color: $color-nav-botones;
         color: white;
           .navbar-brand{
-            font-size: 0.8em;
-          }
-          .navbar-toggler{
-            font-size: 1em;
+            font-size: 2rem;
           }
           li{
+            .nav-link{
+              font-size: 1.5rem;
+            }
             a{
               margin-left:30px;
             }
