@@ -94,7 +94,7 @@ body {
     .main-SA .titulo-SA h1 {
       text-align: center; }
     .main-SA .titulo-SA img {
-      width: 50%; }
+      width: 30%; }
     .main-SA .titulo-SA .nube-derecha {
       display: flex;
       justify-content: flex-end; }
@@ -205,7 +205,7 @@ body {
       justify-content: space-between;
       margin: 1200px 30px 30px 30px; }
 
-@media (min-width: 1600px) and (max-width: 6000px) {
+@media (min-width: 1800px) and (max-width: 6000px) {
   /* GENERAL */
   .body-home {
     font-size: 20px; }
@@ -356,7 +356,7 @@ body {
       .main-productos .padre-productos .precios img:hover {
         transform: scale(1.2); } }
 
-@media (min-width: 1000px) and (max-width: 1601px) {
+@media (min-width: 1000px) and (max-width: 1801px) {
   /* GENERAL */
   body {
     margin: 0px;
@@ -412,152 +412,140 @@ body {
     color: white;
     font-family: Roboto; }
   /* HOME */
+  .body-home {
+    font-size: 20px; }
+    .body-home .header {
+      font-size: 20px; }
+      .body-home .header li a {
+        margin-left: 20px; }
+    .body-home .menu {
+      clear: none;
+      float: right;
+      max-height: none; }
+    .body-home .menu-icon {
+      display: none; }
   .main-home {
     display: grid;
-    grid-template-rows: 1fr 1fr;
-    grid-gap: 10px;
-    width: 100%; }
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows: 1fr 40%; }
     .main-home .padre-home {
       display: flex;
-      flex-direction: column;
-      align-items: center; }
+      align-items: flex-start; }
       .main-home .padre-home .texto-home {
-        margin: 150px 0px 0px 0px;
-        text-align: center;
-        width: 80%; }
-        .main-home .padre-home .texto-home .btn-home {
-          color: white;
-          padding: 20px;
-          width: 80%;
-          margin: 150px 0px 0px 0px;
-          background-color: #fec715;
-          border-radius: 30px;
-          font-size: 1em;
-          font-family: Roboto; }
-        .main-home .padre-home .texto-home .btn-home:hover {
-          transform: scale(1.1); }
-    .main-home .cloud-div {
-      display: flex;
-      justify-content: flex-end; }
-      .main-home .cloud-div .cloud-home {
-        margin: 100px 0px 0px 0px;
-        height: 50%;
-        width: 60%; }
+        text-align: left;
+        width: 100%;
+        margin: 150px 0px 100px 100px; }
+        .main-home .padre-home .texto-home p {
+          width: 70%; }
+        .main-home .padre-home .texto-home input {
+          width: 60%;
+          padding: 10px; }
+  .cloud-home {
+    margin: 200px 0px 0px 0px;
+    height: 400px;
+    width: 600px; }
+  .colmena-home {
+    width: 60%;
+    z-index: -1; }
+  .footer {
+    font-size: 15px;
+    padding: 20px 0px 20px 0px; }
   /* SERVICIOS ADICIONALES */
   .main-SA {
     display: flex;
     flex-direction: column; }
-    .main-SA .titulo-SA {
-      margin: 100px 0px 0px 0px; }
-      .main-SA .titulo-SA h1 {
-        text-align: center; }
-      .main-SA .titulo-SA img {
-        width: 50%; }
-      .main-SA .titulo-SA .nube-derecha {
+    .main-SA .Padre-textos-SA {
+      display: flex;
+      justify-content: space-between; }
+      .main-SA .Padre-textos-SA .titulo-SA {
+        margin: 100px 0px 0px 0px; }
+        .main-SA .Padre-textos-SA .titulo-SA h1 {
+          text-align: center; }
+        .main-SA .Padre-textos-SA .titulo-SA .nube-derecha {
+          display: flex;
+          justify-content: flex-end; }
+      .main-SA .Padre-textos-SA .texto-SA {
+        width: 45%;
         display: flex;
-        justify-content: flex-end; }
-    .main-SA .texto-SA {
-      display: flex;
-      flex-wrap: wrap;
-      text-align: center;
-      padding: 20px; }
-      .main-SA .texto-SA img {
-        margin: 20px;
-        width: 90%; }
-    .main-SA .texto2-SA {
-      display: flex;
-      flex-wrap: wrap;
-      text-align: center;
-      padding: 20px; }
-      .main-SA .texto2-SA img {
-        margin: 20px;
-        width: 90%; }
+        flex-wrap: wrap;
+        text-align: center;
+        padding: 20px; }
+        .main-SA .Padre-textos-SA .texto-SA img {
+          margin: 20px;
+          width: 100%; }
+      .main-SA .Padre-textos-SA .texto2-SA {
+        width: 45%;
+        display: flex;
+        flex-wrap: wrap;
+        text-align: center;
+        padding: 20px; }
+        .main-SA .Padre-textos-SA .texto2-SA img {
+          margin: 20px;
+          padding: 40px;
+          width: 100%; }
   /* SOBRE NOSOTROS */
   .main-SN {
     display: flex;
     flex-direction: column; }
-    .main-SN .texto-SN {
+    .main-SN .Padre-textos-SN {
       display: flex;
-      flex-wrap: wrap;
-      justify-content: center;
-      text-align: center;
-      padding: 20px;
-      margin: 100px 0px 0px 0px; }
-      .main-SN .texto-SN img {
-        margin: 40px 0px 0px 0px;
-        width: 90%; }
-    .main-SN .texto2-SN {
-      display: flex;
-      flex-wrap: wrap;
-      text-align: center;
-      padding: 20px;
-      justify-content: center; }
-      .main-SN .texto2-SN img {
-        margin: 40px 0px 0px 0px;
-        width: 90%; }
+      flex-direction: row; }
+      .main-SN .Padre-textos-SN .texto-SN {
+        width: 70%;
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: center;
+        text-align: center;
+        padding: 20px;
+        margin: 100px 0px 0px 0px; }
+        .main-SN .Padre-textos-SN .texto-SN img {
+          margin: 40px 0px 0px 0px;
+          width: 90%; }
+      .main-SN .Padre-textos-SN .texto2-SN {
+        width: 70%;
+        display: flex;
+        flex-wrap: wrap;
+        text-align: center;
+        padding: 20px;
+        justify-content: center;
+        margin: 100px 0px 0px 0px; }
+        .main-SN .Padre-textos-SN .texto2-SN img {
+          margin: 40px 0px 0px 0px;
+          width: 90%; }
     .main-SN .img2-SN img {
       display: flex;
       width: 100%; }
   /* CONTACTO */
-  .main-contacto .Padre-contacto {
-    margin: 150px 0px 100px 0px;
+  .main-contacto {
     display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center; }
-    .main-contacto .Padre-contacto .logo-contacto {
-      width: 80%; }
-    .main-contacto .Padre-contacto .form-contacto {
-      text-align: center;
-      margin: 10px; }
-    .main-contacto .Padre-contacto .form-contacto-d {
-      text-align: center;
-      margin: 10px; }
-      .main-contacto .Padre-contacto .form-contacto-d input {
-        height: 200px; }
-    .main-contacto .Padre-contacto div {
-      display: flex;
-      justify-content: center;
-      flex-direction: column; }
-      .main-contacto .Padre-contacto div input {
-        width: 100%;
-        padding: 10px;
-        border-radius: 20px; }
-    .main-contacto .Padre-contacto .sumbit-contacto {
-      text-align: center;
-      margin: 30px;
-      padding: 10px;
-      width: 20%;
-      border-radius: 20px;
-      font-size: 1em;
-      background-color: #fec715;
-      color: white;
-      font-family: Roboto; }
-  .main-contacto .img-contacto {
-    width: 100%;
-    display: none; }
+    flex-wrap: wrap; }
+    .main-contacto .Padre-contacto {
+      margin: 10px 0px 100px 0px;
+      width: 50%; }
+      .main-contacto .Padre-contacto .form-contacto {
+        width: 400px; }
+      .main-contacto .Padre-contacto .form-contacto-d {
+        width: 500px; }
+    .main-contacto .img-contacto {
+      width: 50% !important;
+      display: block; }
   /* PRODUCTOS */
   .main-productos {
     background-image: url(../recursos/Productos.png);
     background-repeat: no-repeat;
-    background-size: 250%;
+    background-size: 100%;
     background-position: bottom; }
-    .main-productos .padre-productos {
+    .main-productos .padre-productos h1 {
+      margin: 100px 0px 0px 0px; }
+    .main-productos .padre-productos .precios {
       display: flex;
-      flex-direction: column;
       justify-content: center;
-      text-align: center; }
-      .main-productos .padre-productos h1 {
-        margin: 300px 0px 0px 0px; }
-      .main-productos .padre-productos img {
-        width: 30%; }
-      .main-productos .padre-productos .nubes-productos {
-        display: flex;
-        justify-content: space-between; }
-      .main-productos .padre-productos .precios {
-        display: flex;
-        justify-content: space-between;
-        margin: 1200px 30px 30px 30px; } }
+      margin: 400px 30px 30px 30px; }
+      .main-productos .padre-productos .precios img {
+        width: 10%;
+        margin: 0px 30px 30px 30px; }
+      .main-productos .padre-productos .precios img:hover {
+        transform: scale(1.2); } }
 
 /* MIXIN */
 .main {
