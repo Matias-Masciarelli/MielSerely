@@ -19,6 +19,10 @@ body{
           font-size: 1em;
         }
     }
+    input{
+      border: 0;
+      outline: none;
+    }
     .footer{
       width: 100%;
       display: flex;
@@ -49,9 +53,10 @@ body{
             background-color: $color-nav-botones;
             color: white;
             font-family: $fuente-general;
-              .btn-footer:hover{
-                transform: scale(1.1);
             }
+            .btn-footer:hover{
+              transform: scale(1.1);
+              background: $color-nav-botones-hover;
           }
         }
     }
@@ -64,6 +69,10 @@ body{
   background-color: $color-nav-botones;
   color: white;
   font-family: $fuente-general;
+  }
+  .btn-SA:hover{
+    transform: scale(1.1);
+    background: $color-nav-botones-hover;
 }
 /* HOME */
 
@@ -87,7 +96,7 @@ body{
                 color:white;
                 padding: 20px;
                 width: 80%;
-                margin: 150px 0px 0px 0px;
+                margin: 20px 0px 0px 0px;
                 background-color: $color-nav-botones;
                 border-radius: 30px;
                 font-size: 1em;
@@ -96,6 +105,7 @@ body{
 
               .btn-home:hover{
                 transform: scale(1.1);
+                background: $color-nav-botones-hover;
               }
           }
       }
@@ -199,10 +209,12 @@ body{
       width: 80%;
     }
     .form-contacto{
+      display: block;
       text-align: center;
       margin: 10px;
     }
     .form-contacto-d{
+      display: block;
       text-align: center;
       margin: 10px;
       input{
@@ -229,6 +241,10 @@ body{
       background-color: $color-nav-botones;
       color: white;
       font-family: $fuente-general;
+    }
+    .sumbit-contacto:hover{
+      transform: scale(1.1);
+      background: $color-nav-botones-hover;
     }
   }
   .img-contacto{
@@ -446,10 +462,10 @@ body{
     margin: 10px 0px 100px 0px;
     width: 50%;
     .form-contacto{
-      width: 400px;
+      width: 55%;
     }
     .form-contacto-d{
-      width: 500px;
+      width: 65%;
     }
   }
   .img-contacto{

@@ -13,6 +13,9 @@ body {
       font-size: 1.5em; }
     body header .navbar-toggler {
       font-size: 1em; }
+  body input {
+    border: 0;
+    outline: none; }
   body .footer {
     width: 100%;
     display: flex;
@@ -40,8 +43,9 @@ body {
         background-color: #fec715;
         color: white;
         font-family: Roboto; }
-        body .footer .contacto-footer .btn-footer .btn-footer:hover {
-          transform: scale(1.1); }
+      body .footer .contacto-footer .btn-footer:hover {
+        transform: scale(1.1);
+        background: #fe9615; }
 
 .btn-SA {
   font-size: 1em;
@@ -51,6 +55,10 @@ body {
   background-color: #fec715;
   color: white;
   font-family: Roboto; }
+
+.btn-SA:hover {
+  transform: scale(1.1);
+  background: #fe9615; }
 
 /* HOME */
 .main-home {
@@ -70,13 +78,14 @@ body {
         color: white;
         padding: 20px;
         width: 80%;
-        margin: 150px 0px 0px 0px;
+        margin: 20px 0px 0px 0px;
         background-color: #fec715;
         border-radius: 30px;
         font-size: 1em;
         font-family: Roboto; }
       .main-home .padre-home .texto-home .btn-home:hover {
-        transform: scale(1.1); }
+        transform: scale(1.1);
+        background: #fe9615; }
   .main-home .cloud-div {
     display: flex;
     justify-content: flex-end; }
@@ -152,9 +161,11 @@ body {
   .main-contacto .Padre-contacto .logo-contacto {
     width: 80%; }
   .main-contacto .Padre-contacto .form-contacto {
+    display: block;
     text-align: center;
     margin: 10px; }
   .main-contacto .Padre-contacto .form-contacto-d {
+    display: block;
     text-align: center;
     margin: 10px; }
     .main-contacto .Padre-contacto .form-contacto-d input {
@@ -177,6 +188,9 @@ body {
     background-color: #fec715;
     color: white;
     font-family: Roboto; }
+  .main-contacto .Padre-contacto .sumbit-contacto:hover {
+    transform: scale(1.1);
+    background: #fe9615; }
 
 .main-contacto .img-contacto {
   width: 100%;
@@ -332,9 +346,9 @@ body {
       margin: 10px 0px 100px 0px;
       width: 50%; }
       .main-contacto .Padre-contacto .form-contacto {
-        width: 400px; }
+        width: 55%; }
       .main-contacto .Padre-contacto .form-contacto-d {
-        width: 500px; }
+        width: 65%; }
     .main-contacto .img-contacto {
       width: 50% !important;
       display: block; }
