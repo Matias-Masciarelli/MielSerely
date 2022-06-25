@@ -4,7 +4,6 @@ body {
   font-family: Roboto;
   background-color: #6ca5ca;
   color: white;
-  position: relative;
   font-size: 30px; }
   body header {
     background-color: #fec715;
@@ -13,6 +12,8 @@ body {
       font-size: 1.5em; }
     body header .navbar-toggler {
       font-size: 1em; }
+  body p {
+    text-align: justify; }
   body input {
     border: 0;
     outline: none; }
@@ -23,7 +24,6 @@ body {
     justify-content: center;
     align-items: center;
     background-color: #2c2c2c;
-    bottom: 0px;
     height: 20%; }
     body .footer img {
       width: 100px;
@@ -90,7 +90,7 @@ body {
     display: flex;
     justify-content: flex-end; }
     .main-home .cloud-div .cloud-home {
-      margin: 100px 0px 0px 0px;
+      margin: 100px 0px 350px 0px;
       height: 50%;
       width: 60%; }
 
@@ -153,11 +153,13 @@ body {
 
 /* CONTACTO */
 .main-contacto .Padre-contacto {
-  margin: 150px 0px 100px 0px;
+  margin: 300px 0px 500px 0px;
   display: flex;
   flex-direction: column;
   justify-content: center;
   align-items: center; }
+  .main-contacto .Padre-contacto p {
+    text-align: center; }
   .main-contacto .Padre-contacto .logo-contacto {
     width: 80%; }
   .main-contacto .Padre-contacto .form-contacto {
